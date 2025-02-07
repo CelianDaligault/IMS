@@ -1,16 +1,16 @@
 # Weather Prediction Report
 
 ## Summary
-This project uses PySpark to analyze and predict temperature trends based on weather data.
+This project uses PySpark to analyze and predict temperatures based on weather data.
 
 ## Results
-### Temperature Trend
-![Temperature Trend](temperature_trend_plot.png)
+### Temperature
+![Temperature](temperature_plot.png)
 
-### Mean Direct Radiation Trend
-![Direct Radiation Trend](radiation_direct_trend_plot.png)
+### Mean Direct Radiation
+![Direct Radiation](radiation_direct_plot.png)
 
-### Mean Diffuse Radiation Trend
-![Diffuse Radiation Trend](radiation_diffuse_trend_plot.png)
+### Mean Diffuse Radiation
+![Diffuse Radiation](radiation_diffuse_plot.png)
 
 ### Model Performance
