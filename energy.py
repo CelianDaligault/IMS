@@ -84,7 +84,7 @@ plt.grid(True)
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-plt.savefig("energy_demand_space.png")
+plt.savefig("energy_demand_total.png")
 
 with open("README.md", "w") as f:
     f.write("# Energy demand Report\n\n")
@@ -92,9 +92,16 @@ with open("README.md", "w") as f:
     f.write("This project uses PySpark to analyze and predict Energy demand in France.\n\n")
     f.write("## Results\n")
     f.write("### Energy water\n")
-    f.write("![Energy water](temperature_plot.png)\n\n")
+    f.write("![Energy water](energy_demand_water.png)\n\n")
     f.write("### Energy space\n")
-    f.write("![Energy space](radiation_direct_plot.png)\n\n")
+    f.write("![Energy space](energy_demand_space.png)\n\n")
     f.write("### Energy total\n")
-    f.write("![Energy total](radiation_diffuse_plot.png)\n\n")
+    f.write("![Energy total](energy_demand_total.png)\n\n")
     f.write("### Model Performance\n")
+    f.write("![Energy prediction](Prediction_vs_reality.png)\n\n")
+    f.write("## Alerts\n")
+    if not alerts.empty:
+        f.write("The following alerts were detected:\n")
+        f.write(alerts.to_markdown())
+    else:
+        f.write("No alerts detected.")
