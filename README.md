@@ -1,16 +1,16 @@
-# Weather Prediction Report
+# Energy demand Report
 
 ## Summary
-This project uses PySpark to analyze and predict temperatures based on weather data.
+This project uses PySpark to analyze and predict Energy demand in France.
 
 ## Results
-### Temperature
-![Temperature](temperature_plot.png)
+### Energy water
+![Energy water](temperature_plot.png)
 
-### Mean Direct Radiation
-![Direct Radiation](radiation_direct_plot.png)
+### Energy space
+![Energy space](radiation_direct_plot.png)
 
-### Mean Diffuse Radiation
-![Diffuse Radiation](radiation_diffuse_plot.png)
+### Energy total
+![Energy total](radiation_diffuse_plot.png)
 
 ### Model Performance
